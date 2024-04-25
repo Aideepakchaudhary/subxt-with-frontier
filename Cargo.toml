@@ -1,0 +1,14 @@
+[package]
+name = "eth_signer_example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = { version = "1.0.80", features = ["backtrace"] }
+subxt = "0.34.0"
+tokio = { version = "1.36.0", features = ["rt-multi-thread", "macros"] }
+codec = { package = "parity-scale-codec", version = "3.6.9", features = ["derive"] }
+
+hex = "0.4.3"
+keccak-hash = "0.10.0"
+secp256k1 = { version = "0.28.2", features = ["recovery", "global-context"] }
